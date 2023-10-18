@@ -10,10 +10,12 @@ export class RecordOfIlnessService {
   constructor(
     @InjectModel(RecordOfIlness.name) private recordModel: Model<RecordOfItemsDocument>
   ){}
+
   create(createRecordOfIlnessDto: CreateRecordOfIlnessDto) {
     return this.recordModel.create(createRecordOfIlnessDto);
   }
 
+  
   findAll() {
     return this.recordModel.find();
   }

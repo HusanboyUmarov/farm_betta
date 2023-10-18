@@ -12,6 +12,7 @@ export class SpecialityController {
     return this.specialityService.create(createSpecialityDto);
   }
 
+  
   @Get()
   findAll() {
     return this.specialityService.findAll();
